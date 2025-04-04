@@ -4,7 +4,7 @@ from datetime import datetime
 joblib.dump(model, 'model.pkl')
 
 # Load
-model = joblib.load('model.pkl')
+model=joblib.load('model.pkl')
 
 # 2. Add your custom update logic here
 print(f"Model loaded successfully at {datetime.now()}")
