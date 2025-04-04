@@ -1,9 +1,10 @@
-import pickle
+import joblib
 from datetime import datetime
 
-# 1. Load your existing model
-with open('model.pkl', 'rb') as f:
-    model = pickle.load(f)
+joblib.dump(model, 'model.pkl')
+
+# Load
+model = joblib.load('model.pkl')
 
 # 2. Add your custom update logic here
 print(f"Model loaded successfully at {datetime.now()}")
