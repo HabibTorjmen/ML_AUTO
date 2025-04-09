@@ -1,5 +1,5 @@
 name: Model Auto-Update
-on: [workflow_dispatch, push]  # Manual triggers + push events
+on: [workflow_dispatch, push]  # Manual triggers + push events test
 
 jobs:
   update:
